@@ -1,4 +1,4 @@
-package probablememe.amarradi.github.com.setClockAtboot;
+package probablememe.amarradi.github.com.setClockAtboot.receivers;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

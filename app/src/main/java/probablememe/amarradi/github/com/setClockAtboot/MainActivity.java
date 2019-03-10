@@ -19,6 +19,8 @@ import android.widget.TimePicker;
 import java.text.DateFormat;
 import java.util.Calendar;
 
+import probablememe.amarradi.github.com.setClockAtboot.receivers.AlertReceiver;
+
 public class MainActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
 
     private TextView mtextView;
@@ -78,9 +80,6 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
 
         alarmManager.setExact(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(), pendingIntent);
 
-
-
-
     }
 
     private void cancelAlarm() {
@@ -92,6 +91,4 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
         mtextView.setText("Alarm canceled");
 
     }
-
-
 }
